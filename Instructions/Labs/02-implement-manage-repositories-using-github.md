@@ -26,7 +26,7 @@ En este laboratorio, aprenderá a:
 
 ## Ejercicio 1: Implementación y administración de repositorios con GitHub
 
-En este ejercicio, bifurcará un repositorio de Git y lo administrará mediante GitHub.
+En este ejercicio, bifurcarás un repositorio de Git y lo administrarás mediante GitHub.
 
 > **Importante:** El uso de la característica de solicitud de incorporación de cambios de GitHub Copilot es completamente opcional. Para usar esta característica, debe ser miembro de una empresa con una suscripción de **Copilot Enterprise**. Puede omitir los pasos que implican la característica de solicitud de incorporación de cambios de GitHub Copilot si no tiene acceso a ella. Si desea obtener más información sobre la característica de solicitud de incorporación de cambios de GitHub Copilot, consulte [Acerca de los resúmenes de solicitudes de incorporación de cambios de Copilot](https://docs.github.com/en/enterprise-cloud@latest/copilot/github-copilot-enterprise/copilot-pull-request-summaries/about-copilot-pull-request-summaries).
 
@@ -77,8 +77,8 @@ El ejercicio consta de las tareas siguientes:
 
 1. En la página de **Spoon-Knife**, seleccione la pestaña **Incidencias**.
 1. En la página **Incidencias**, seleccione **Nueva incidencia**.
-1. En el cuadro de texto **Agregar un título**, escriba **index.html parece bastante austero**.
-1. En el cuadro de texto **Agregar una descripción**, escriba **el archivo index.html puede tener un toque moderno**.
+1. En el cuadro de texto **Agregar un título**, escribe **`index.html looks rather austere`**.
+1. En el cuadro de texto **Agregar una descripción**, escribe **`index.html file can use a modern touch`**.
 1. En el panel actual, en la sección Usuario asignado, seleccione **Agregar usuario asignado…** y, en la sección **Sugerencias**, seleccione el nombre de usuario de GitHub.
 1. Seleccione el icono de engranaje situado junto a la entrada **Etiquetas** y, en la lista desplegable, seleccione **mejora**.
 1. Seleccione el icono de engranaje situado junto a la entrada **Proyectos** y, en la lista desplegable, seleccione **DevOps Core Intro Project**.
@@ -92,7 +92,7 @@ El ejercicio consta de las tareas siguientes:
 
 1. Vuelva a la pestaña **Código**.
 1. En la esquina superior izquierda de la página, seleccione la entrada **principal** para mostrar la lista desplegable **Cambiar ramas/etiquetas**.
-1. En el cuadro de texto **Buscar o crear una rama...**, escriba **actualizar index.html** y, a continuación, seleccione **Crear rama: actualizar index.html desde la entrada "principal"** para crear una nueva rama.
+1. En el cuadro de texto **Buscar o crear una rama...**, escribe **`update index.html`** y, a continuación, selecciona **Crear rama: actualizar index.html desde la entrada "principal"** para crear una nueva rama.
 
    > **Nota:** Esto hará automáticamente que la rama recién creada sea la actual, como se indica en el contenido de la lista desplegable.
 
@@ -113,7 +113,7 @@ El ejercicio consta de las tareas siguientes:
    ```
 
 1. En la esquina superior derecha de la página del editor, seleccione **Confirmar cambios...**.
-1. En la ventana **Confirmar cambios**, en el cuadro de texto **Descripción extendida **, escriba **Se ha modificado la imagen y el texto de párrafo**, acepte el mensaje de confirmación predeterminado y seleccione **Confirmar cambios**.
+1. En la ventana **Confirmar cambios**, en el cuadro de texto **Descripción extendida**, escribe **`Modified the image and paragraph text`**, acepta el mensaje de confirmación predeterminado y selecciona **Confirmar cambios**.
 
    > **Nota:** También tiene la opción de crear una rama para la confirmación en este momento.
 
@@ -140,12 +140,12 @@ El ejercicio consta de las tareas siguientes:
    ```
 
 1. En la esquina superior derecha de la página del editor, seleccione **Confirmar cambios...**.
-1. En la ventana **Confirmar cambios**, en el cuadro de texto **Descripción extendida**, escriba **Se han modificado los selectores y las etiquetas CSS**, acepte el mensaje de confirmación predeterminado y seleccione **Confirmar cambios** para confirmar los cambios en la rama update-index.html.
+1. En la ventana **Confirmar cambios**, en el cuadro de texto **Descripción extendida**, escribe **`Modified CSS tags and selectors`**, acepta el mensaje de confirmación predeterminado y selecciona **Confirmar cambios** para confirmar los cambios en la rama update-index.html.
 
 ### Tarea 6: Creación y combinación de una solicitud de incorporación de cambios
 
 1. Vuelva a la página de repositorio **Spoon-Knife** bifurcado.
-1. Asegúrese de que está viendo la rama **update-index.html**, como se indica en la etiqueta que aparece en la lista desplegable de la esquina superior izquierda de la página. Si esa etiqueta muestra **principal**, selecciónela primero y, a continuación, en la lista desplegable que contiene la lista de ramas, seleccione **update-index.html**.
+1. Asegúrate de que estás viendo la rama **update-index.html**, como se indica en la etiqueta que aparece en la lista desplegable de la esquina superior izquierda de la página. Si esa etiqueta muestra **principal**, selecciónela primero y, a continuación, en la lista desplegable que contiene la lista de ramas, seleccione **update-index.html**.
 1. En la página del repositorio **Spoon-Knife** bifurcado, seleccione **Contribuir** y, a continuación, seleccione **Abrir solicitud de incorporación de cambios**.
 1. En la página **Abrir solicitud de incorporación de cambios**, seleccione la entrada **repositorio base: octocat/Spoon-Knife**.
 1. En la lista desplegable **Elegir un repositorio base**, seleccione el nombre del repositorio bifurcado que creó al principio de este laboratorio.
@@ -164,7 +164,7 @@ El ejercicio consta de las tareas siguientes:
 
    1. Revise el resumen generado por la característica de solicitud de cambios de GitHub Copilot.
 
-   1. Una vez generado el resumen, escriba **Direccionamiento número 1** en el **Agregar una descripción** en la primera línea y seleccione **Crear solicitud de cambios**.
+   1. Una vez generado el resumen, escribe **`Addressing #1`** en **Agregar una descripción** en la primera línea y selecciona **Crear solicitud de cambios**.
 
        ![Resumen de GitHub Copilot](media/github-pull-request-copilot-summary.png)
 
@@ -172,7 +172,7 @@ El ejercicio consta de las tareas siguientes:
 
    > **Nota:** si decide usar la característica GitHub Copilot para la solicitud de cambios, puede omitir el siguiente paso.
 
-1. En el cuadro de texto **Agregar una descripción**, escriba **Direccionamiento número 1** y seleccione **Crear solicitud de cambios**.
+1. En el cuadro de texto **Agregar una descripción**, escribe **`Addressing #1`** y selecciona **Crear solicitud de cambios**.
 
    > **Nota:** Al incluir **número 1**, puede hacer referencia a la primera incidencia asociada a esta solicitud de cambios.
 
