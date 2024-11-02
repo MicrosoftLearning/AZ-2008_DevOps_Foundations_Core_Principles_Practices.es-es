@@ -10,7 +10,7 @@ lab:
 
 ## Escenario
 
-Recuerde el escenario de este módulo en el que trabaja para una empresa de desarrollo de software del sector minorista que planea migrar su tienda en línea a una nueva aplicación, pero tiene dificultades para planificar el proyecto debido a la escasa colaboración y comunicación entre los equipos de desarrollo y operaciones. Dado que ha decidido usar GitHub para la planificación y administración de Agile, este laboratorio le ofrece la oportunidad de crear un repositorio de GitHub, hitos y problemas asociados, un proyecto y un panel de proyectos. Además, podrá agregar un borrador al panel del proyecto y un elemento basado en un problema y revisar la configuración de automatización.
+Recuerda el escenario de este módulo en el que trabajas para una empresa de desarrollo de software del sector minorista que planea migrar su tienda en línea a una nueva aplicación, pero tiene dificultades para planificar el proyecto debido a la escasa colaboración y comunicación entre los equipos de desarrollo y operaciones. Dado que ha decidido usar GitHub para la planificación y administración de Agile, este laboratorio le ofrece la oportunidad de crear un repositorio de GitHub, hitos y problemas asociados, un proyecto y un panel de proyectos. Además, podrá agregar un borrador al panel del proyecto y un elemento basado en un problema y revisar la configuración de automatización.
 
 ## Objetivos
 
@@ -23,7 +23,7 @@ En este laboratorio, aprenderá a:
 
 ## Ejercicio 1: creación de un repositorio, un proyecto y un panel de proyectos de GitHub
 
-En este ejercicio, creará un repositorio, un proyecto y un panel de proyectos de GitHub.
+En este ejercicio, crearás un repositorio, un proyecto y un panel de proyectos de GitHub.
 
 > **Nota:** Según la documentación de GitHub, Projects ofrece una *herramienta adaptable y flexible para planear y realizar el seguimiento del trabajo en GitHub*. Los proyectos proporcionan acceso a los *paneles*, que desempeñan el rol de los paneles *Kanban*. Kanban es un marco común y ampliamente utilizado en un entorno ágil para representar el estado del trabajo del proyecto.
 
@@ -39,10 +39,10 @@ El ejercicio consta de las tareas siguientes:
 1. Inicie un explorador web y vaya a la página principal de [GitHub](https://github.com).
 1. Cuando se le pida que se autentique, inicie sesión con su cuenta de usuario de GitHub.
 1. En la página principal de GitHub, seleccione la pestaña **Repositorios** y, luego, seleccione **Nuevo**.
-1. En la página **Crear un repositorio**, realice las siguientes acciones:
+1. En la página **Crear un nuevo repositorio**, realiza las siguientes acciones:
 
    - En la lista desplegable **Propietario**, seleccione el nombre de la cuenta de usuario de GitHub.
-   - En el cuadro de texto **Nombre del repositorio**, escriba **DevOpsCoreIntroRepo**.
+   - En el cuadro de texto **Nombre del repositorio**, escribe **`DevOpsCoreIntroRepo`**.
    - Cambie la visibilidad del repositorio a **Privado**.
    - Active la casilla **Agregar un archivo LÉAME**.
    - En la lista desplegable **Agregar .gitignore**, seleccione **Visual Studio**.
@@ -63,17 +63,17 @@ El ejercicio consta de las tareas siguientes:
 
 1. En la página **Incidencia**, a la izquierda del botón **Nueva incidencia**, seleccione **Hitos**.
 1. En la página **Hitos**, seleccione **Nuevo hito**.
-1. En la página **Nuevo hito**, realice las siguientes acciones:
+1. En la página **Nuevo hito**, realiza las siguientes acciones:
 
-   - En el cuadro de texto **Título**, escriba **versión alfa**.
+   - En el cuadro de texto **Título**, escriba **`alpha release`**.
    - En el cuadro de texto **Fecha de vencimiento (opcional)**, escriba la fecha una semana antes de la fecha actual.
-   - En el cuadro de texto **Descripción**, escriba **Finalización de la versión alfa**.
+   - En el cuadro de texto **Descripción**, escribe **`Completion of the alpha release`**.
 
 1. Seleccione **Crear hito**.
-1. Repita los tres últimos pasos para crear un hito de **versión beta** con la fecha de vencimiento dos semanas antes de la fecha actual. En el cuadro de texto **Descripción**, escriba **Finalización de la versión beta**.
+1. Repita los tres últimos pasos para crear un hito de **versión beta** con la fecha de vencimiento dos semanas antes de la fecha actual. En el cuadro de texto **Descripción**, escribe **`Completion of the beta release`**.
 1. Vuelva a la página **Incidencias** y seleccione **Nueva incidencia**.
-1. En el cuadro de texto **Agregar un título**, escriba **La página LÉAME del repositorio está vacía**.
-1. En el cuadro de texto **Agregar una descripción**, escriba **La brevedad puede ser una virtud, pero a esta página LÉAME le vendría bien un poco de texto**.
+1. En el cuadro de texto **Agregar un título**, escribe **`Repo README page is empty`**.
+1. En el cuadro de texto **Agregar una descripción**, escribe **`Brevity might be a virtue, but this README page can really use some text`**.
 1. Seleccione el icono de engranaje situado junto a la entrada **Hito** y, en la lista desplegable, seleccione **versión alfa**.
 1. Seleccione el icono de engranaje situado junto a la entrada **Etiquetas** y, en la lista desplegable, seleccione **error**.
 1. Seleccione **Enviar nueva incidencia**. Tenga en cuenta que la incidencia se ha asignado automáticamente **#1**.
@@ -87,8 +87,8 @@ El ejercicio consta de las tareas siguientes:
    > **Nota:** Como alternativa, puede empezar desde cero y mostrar el proyecto en la tabla, el panel o el formato de hoja de ruta.
 
 1. En la página del nuevo proyecto, seleccione el nombre del proyecto generado automáticamente. Esto mostrará automáticamente la página **Configuración del proyecto**.
-1. En el cuadro de texto **Nombre del proyecto**, escriba **Proyecto de introducción principal de DevOps**.
-1. En el cuadro de texto **Descripción breve**, escriba **Introducción a los proyectos de GitHub** y seleccione **Guardar**.
+1. En el cuadro de texto **Nombre del proyecto**, escribe **`DevOps Core Intro Project`**.
+1. En el cuadro de texto **Descripción breve**, escribe **`Introduction to GitHub Projects`** y selecciona **Guardar**.
 1. En la sección **LÉAME**, escriba el texto siguiente
 
    > **Nota:** La sección **LÉAME** incluye un editor de Markdown simplificado que le ayuda a crear una página LÉAME visualmente atractiva para el proyecto. Puede usar los iconos de la barra de herramientas para dar formato al texto y usar la pestaña **Vista previa** para revisar los cambios resultantes. Copie y pegue el texto siguiente en la sección Editor LÉAME:
@@ -125,12 +125,12 @@ El ejercicio consta de las tareas siguientes:
    > **Nota:** Este diseño representa un panel Kanban muy básico. Dentro de cada columna, puede agregar elementos individuales. También puede agregar columnas adicionales.
 
 1. Para agregar una columna adicional, seleccione el icono **+** situado a la derecha de la columna **Listo** y, a continuación, seleccione **+ Nueva columna**.
-1. En la ventana **Nueva opción**, en el cuadro de texto **Etiquetar texto**, escriba **Revisión en curso** y seleccione un color que desee asignar a la columna. En el cuadro de texto **Descripción**, escriba **Este elemento se está revisando** y, a continuación, seleccione **Guardar**.
+1. En la ventana **Nueva opción**, en el cuadro de texto **Texto de etiqueta**, escribe **`Review In Progress`** y selecciona un color que quieras asignar a la columna. En el cuadro de texto **Descripción**, escribe **`This item is being reviewed`** y, después, selecciona **Guardar**.
 1. Seleccione el círculo pequeño situado junto a la etiqueta **Revisión en curso** de la columna recién agregada y úselo para arrastrarla entre la columna **En curso** y **Listo**.
 
 ## Ejercicio 2: creación y administración de elementos del panel del proyecto
 
-En este ejercicio, creará y administrará elementos del panel del proyecto
+En este ejercicio, crearás y administrarás elementos del panel del proyecto
 
 > **Nota:** Hay dos maneras básicas de agregar elementos a un panel de proyecto. Puede crear un borrador de elemento o agregar un elemento que represente una incidencia existente en un repositorio de GitHub.
 
@@ -146,11 +146,11 @@ El ejercicio consta de las tareas siguientes:
 
    > **Nota:** En el cuadro de texto que se muestra automáticamente, puede empezar a escribir para crear un borrador o un escriba **#** para hacer referencia a un problema existente en cualquiera de los repositorios de GitHub. Comenzaremos con la primera de estas dos técnicas.
 
-1. En el cuadro de texto, escriba **Falta wiki** y presione **Entrar** en el teclado. Esto agregará un nuevo elemento de borrador a la columna **Tareas pendientes**.
+1. En el cuadro de texto, escribe **`Missing Wiki`** y, después, presiona **Entrar** en el teclado. Esto agregará un nuevo elemento de borrador a la columna **Tareas pendientes**.
 1. En el elemento de borrador recién agregado, seleccione el símbolo de puntos suspensivos y, en el menú desplegable, seleccione **Convertir a incidencia**.
 1. En la lista desplegable **Seleccionar un elemento**, seleccione **DevOpsCoreIntroRepo** para agregar el elemento al repositorio que creó en el ejercicio anterior. Tenga en cuenta que la incidencia se ha etiquetado automáticamente con **#2**.
 1. Seleccione la incidencia **Falta wiki**.
-1. En el panel **Falta wiki #2**, tenga en cuenta que tiene opciones de configuración adicionales disponibles en este momento, incluidas las etiquetas y los hitos.
+1. En el panel **Falta wiki #2**, ten en cuenta que tienes otras opciones de configuración disponibles en este momento, incluidas las etiquetas y los hitos.
 1. Seleccione **Agregar etiquetas** y, en la lista desplegable **Seleccionar elementos**, seleccione **mejora**.
 1. Seleccione **Agregar hito** y, en la lista desplegable **Seleccionar un elemento**, seleccione **versión alfa**.
 1. Cierre el panel **Falta wiki #2**.
@@ -158,7 +158,8 @@ El ejercicio consta de las tareas siguientes:
    > **Nota:** Ahora agregará otro elemento de borrador y lo convertirá en una incidencia.
 
 1. En la página **Proyecto de introducción principal de DevOps**, en la columna **Tareas pendientes**, seleccione **+ Agregar elemento**.
-1. En el cuadro de texto, escriba **Se necesitan colaboradores adicionales** y presione **Entrar** en el teclado. Esto agregará un nuevo elemento de borrador a la columna **Tareas pendientes**.
+1. En el cuadro de texto, escribe **`Additional collaborators needed`** y presiona **Entrar** en el teclado. Esto agregará un nuevo elemento de borrador a la columna **Tareas pendientes**.
+1. En el elemento de borrador recién agregado, selecciona el símbolo de puntos suspensivos y, en el menú desplegable, selecciona **Convertir a incidencia**; a continuación, selecciona **DevOpsCoreIntroRepo** para agregar el elemento al respositorio.
 
 ### Tarea 2: Adición de un elemento basado en una incidencia
 
@@ -199,7 +200,7 @@ El ejercicio consta de las tareas siguientes:
 1. Tenga en cuenta que cerrar el elemento dio lugar a las siguientes acciones:
 
    - El estado del elemento se cambió automáticamente a **Listo**, como se indica en un comentario adicional que indica que el bot de **github-project-automation** movió el elemento de **En progreso** a **Listo** en el **Proyecto de introducción principal de DevOps**.
-   - El hito de **versión alfa** se ha marcado como completo, como se indica en la barra horizontal verde de la sección **Hito** de la página.
+   - El hito de **versión alfa** se ha marcado como completo al 50 %, como se indica en la barra horizontal verde de la sección **Hito** de la página.
 
    > **Nota:** En caso de que no vea los cambios, actualice la página.
 

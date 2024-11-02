@@ -40,7 +40,7 @@ En este laboratorio, aprenderá a:
 
 1. Inicie un explorador web y vaya a Azure Portal en `https://portal.azure.com`.
 1. Si se le solicita, inicie sesión con su cuenta de Microsoft Entra ID con el acceso de propietario a la suscripción de Azure que usó en el laboratorio anterior.
-1. En la pestaña explorador web que muestra Azure Portal, en el cuadro de texto de búsqueda de la parte superior de la página, escriba **Suscripciones** y, en la lista de resultados, seleccione **Suscripciones**.
+1. En la pestaña explorador web que muestra Azure Portal, en el cuadro de texto de búsqueda de la parte superior de la página, escribe **`Subscriptions`** y, en la lista de resultados, selecciona **Suscripciones**.
 1. En la página suscripciones, en el menú vertical del lado izquierdo, seleccione **Proveedores de recursos**.
 1. En la lista de proveedores de recursos, busque y seleccione **Microsoft.Chaos**.
 1. Con el proveedor de recursos **Microsoft.Chaos** seleccionado, en la barra de herramientas, seleccione **Registrar**.
@@ -49,7 +49,7 @@ En este laboratorio, aprenderá a:
 
 ## Ejercicio 1: Mejora de la resistencia de la carga de trabajo mediante Traffic Manager
 
-En este ejercicio, implementará una configuración resistente que distribuye las solicitudes entre las dos instancias de aplicación web de .NET en dos regiones de Azure diferentes mediante Azure Traffic Manager.
+En este ejercicio, implementarás una configuración resistente que distribuye las solicitudes entre las dos instancias de aplicación web de .NET en dos regiones de Azure diferentes mediante Azure Traffic Manager.
 
 > **Nota:** Para el propósito de nuestro laboratorio, consideraremos la implementación de . Aplicación web basada en NET eShopOnWeb en la región Este de EE. UU. como instancia principal. Aunque, en este caso, esta consideración es puramente arbitraria (y solo se usa con fines de demostración), puede haber escenarios en los que podría ser beneficioso priorizar uno de los puntos de conexión.
 
@@ -60,11 +60,11 @@ El ejercicio consta de las tareas siguientes:
 
 ### Tarea 1: Implementar un perfil de Traffic Manager
 
-1. En la pestaña explorador web que muestra Azure Portal, en el cuadro de texto de búsqueda de la parte superior de la página, escriba **perfiles de Traffic Manager** y, en la lista de resultados, seleccione **perfiles de Traffic Manager**.
+1. En la pestaña del explorador web que muestra Azure Portal, en el cuadro de texto de búsqueda de la parte superior de la página, escribe **`Traffic Manager profiles`** y, en la lista de resultados, selecciona **perfiles de Traffic Manager**.
 1. En la página **Equilibrio de carga \| Traffic Manager**, seleccione **+ Crear**.
-1. En la página **Crear perfil de Traffic Manager**, realice las siguientes acciones:
+1. En la página **Crear perfil de Traffic Manager**, realiza las siguientes acciones:
 
-   - En el cuadro de texto **Nombre **, escriba **devopsfoundationstmprofile**.
+   - En el cuadro de texto **Nombre**, escriba **`devopsfoundationstmprofile`**.
 
        > **Nota:** El nombre del perfil de Traffic Manager debe ser único. Si recibe un mensaje de error que indica que el nombre ya está en uso, pruebe otro nombre y asegúrese de registrarlo. Lo necesitará a lo largo de este laboratorio.
 
@@ -73,7 +73,7 @@ El ejercicio consta de las tareas siguientes:
    > **Nota:** Elegimos el método de enrutamiento de prioridad para reflejar la suposición algo arbitraria de que la aplicación web de Azure App Service debe controlar todas las solicitudes en el Este de EE. UU.
 
    - Compruebe que la suscripción de Azure aparece en la lista desplegable **Suscripción**
-   - Seleccione el vínculo **Crear nuevo** debajo de la lista desplegable **Grupo de recursos**, en el cuadro de texto **Nombre**, escriba **devops-foundations-rg** y, después, seleccione **Aceptar**.
+   - Selecciona el vínculo **Crear nuevo** debajo de la lista desplegable **Grupo de recursos**, en el cuadro de texto **Nombre**, escribe **`rg-devops-foundations`** y, después, selecciona **Aceptar**.
    - En la lista desplegable **ubicación del grupo de recursos**, seleccione la misma región de Azure que eligió en los laboratorios anteriores de este curso.
 
 1. Seleccione **Crear** para iniciar el proceso de aprovisionamiento.
@@ -81,7 +81,7 @@ El ejercicio consta de las tareas siguientes:
    > **Nota**: Espere a que la implementación se complete. Esto debería completarse en un minuto.
 
 1. En la página **Equilibrio de carga \| Traffic Manager**, si es necesario, seleccione **Actualizar** y, a continuación, seleccione **devopsfoundationstmprofile**.
-1. En la página **devopsfoundationstmprofile**, en la sección **Essentials**, copie el valor de la configuración **Nombre DNS** y guárdelo. Lo necesitará a lo largo de este laboratorio.
+1. En la página **devopsfoundationstmprofile**, en la sección **Essentials**, copie el valor de la configuración **Nombre DNS** y guárdelo. Lo necesitarás a lo largo de este laboratorio.
 1. En la página ** devopsfoundationstmprofile**, en el menú de navegación izquierdo, en la sección **Valores**, seleccione **Configuración**.
 1. Revise el contenido de la página de **devopsfoundationstmprofile \| Configuración**. Tenga en cuenta que, de forma predeterminada, el **tiempo de vida de DNS (TTL)** está establecido en **60** segundos. Cambie el valor a **5** segundos.
 
@@ -102,7 +102,7 @@ El ejercicio consta de las tareas siguientes:
 1. En el panel **Agregar punto de conexión**, realice las siguientes acciones:
 
    - Asegúrese de que **Punto de conexión de Azure** aparece en la lista desplegable **Tipo**.
-   - En el cuadro de texto **Nombre**, escriba **aplicación web DevOps Foundations: Este de EE. UU.**.
+   - En el cuadro de texto **Nombre**, escriba **`DevOps Foundations web app - East US`**.
    - Asegúrese de que la casilla **Habilitar punto de conexión** esté activada.
    - En la lista desplegable **Tipo de recurso de destino**, seleccione **App Service**.
    - En la lista desplegable **Recurso de destino**, en la sección **rg-eshoponweb-eastus**, seleccione el nombre de la aplicación web de App Service en la región Este de EE. UU. de Azure.
@@ -121,7 +121,7 @@ El ejercicio consta de las tareas siguientes:
 1. En el panel **Agregar punto de conexión**, realice las siguientes acciones:
 
    - Asegúrese de que **Punto de conexión de Azure** aparece en la lista desplegable **Tipo**.
-   - En el cuadro de texto **Nombre**, escriba **aplicación web DevOps Foundations: Oeste de Europa**.
+   - En el cuadro de texto **Nombre**, escriba **`DevOps Foundations web app - West Europe`**.
    - Asegúrese de que la casilla **Habilitar punto de conexión** esté activada.
    - En la lista desplegable **Tipo de recurso de destino**, seleccione **App Service**.
    - En la lista desplegable **Recurso de destino**, en la sección **rg-eshoponweb-westeurope**, seleccione el nombre de la aplicación web de App Service en la región Oeste de Europa de Azure.
@@ -151,7 +151,7 @@ El ejercicio consta de las tareas siguientes:
 
 ## Ejercicio 2: Prueba de la resistencia de la carga de trabajo mediante Azure Chaos Studio
 
-En este ejercicio, probará la resistencia de la carga de trabajo mediante Azure Chaos Studio.
+En este ejercicio, probarás la resistencia de la carga de trabajo mediante Azure Chaos Studio.
 
 > **Nota:** En este ejercicio se muestra el uso de Azure Chaos Studio. El objetivo de Azure Chaos Studio es ayudar a medir, comprender y crear resistencia de aplicaciones y servicios. Esto se logra mediante la interrupción intencionada de las cargas de trabajo con el fin de identificar brechas de resistencia e implementar la mitigación correspondiente de forma proactiva, en lugar de reactiva.
 
@@ -163,7 +163,7 @@ El ejercicio consta de las tareas siguientes:
 
 ### Tarea 1: Configuración del entorno de Azure Chaos Studio
 
-1. En la pestaña explorador web que muestra Azure Portal, en el cuadro de texto de búsqueda de la parte superior de la página, escriba **Chaos Studio** y, en la lista de resultados, seleccione **Chaos Studio**.
+1. En la pestaña explorador web que muestra Azure Portal, en el cuadro de texto de búsqueda de la parte superior de la página, escribe **`Chaos Studio`** y, en la lista de resultados, selecciona **Chaos Studio**.
 1. En la página **Chaos Studio**, seleccione **Destinos**.
 1. En la página **Chaos Studio \| Destinos**, seleccione la instancia de aplicación web de Azure App Service en el grupo de recursos **rg-eshoponweb-eastus** en la región Este de EE. UU. que implementó en el laboratorio anterior.
 1. En la barra de herramientas, seleccione el encabezado de lista desplegable **Habilitar destinos** y, en la lista desplegable, seleccione **Habilitar destinos directos de servicio (Todos los recursos)**.
@@ -173,24 +173,24 @@ El ejercicio consta de las tareas siguientes:
 
 ### Tarea 2: Implementación de un experimento
 
-1. En Azure Portal, en el cuadro de texto de búsqueda de la parte superior de la página, escriba **Chaos Studio** y, en la lista de resultados, seleccione **Chaos Studio**.
+1. En Azure Portal, en el cuadro de texto de búsqueda de la parte superior de la página, escribe **`Chaos Studio`** y, en la lista de resultados, selecciona **Chaos Studio**.
 1. En la página **Chaos Studio**, seleccione **Experimentos**.
 1. En la página **Experimentos**, seleccione **+ Crear** y, a continuación, en la lista desplegable, seleccione **Nuevo experimento**.
 1. En la pestaña **Conceptos básicos** de la página **Crear un experimento**, realice las siguientes acciones:
 
    - Compruebe que la suscripción de Azure aparece en la lista desplegable **Suscripción**.
-   - Seleccione el vínculo **Crear nuevo** debajo de la lista desplegable **Grupo de recursos**, en el cuadro de texto **Nombre**, escriba **devops-foundations-rg** y, después, seleccione **Aceptar**.
-   - En la sección **Detalles del experimento**, en el cuadro de texto **Nombre**, escriba **DevOps_Foundations_Labs_Experiment_01**.
+   - Selecciona el vínculo **Crear nuevo** debajo de la lista desplegable **Grupo de recursos**, en el cuadro de texto **Nombre**, escribe **`rg-devops-foundations`** y, después, selecciona **Aceptar**.
+   - En la sección **Detalles del experimento**, en el cuadro de texto **Nombre**, escribe **`DevOps_Foundations_Labs_Experiment_01`**.
    - En la lista desplegable **Región**, seleccione la región de Azure**Oeste de Europa**.
 
    > **Nota:** Podría elegir cualquier región de Azure, pero teniendo en cuenta que está probando errores en un recurso de la región de Oeste de Europa, cualquier región que no sea la del Este de EE. UU. parece más apropiada.
 
 1. En la pestaña **Aspectos básicos** de la página **Crear un experimento**, seleccione **Siguiente: Permisos >**.
-1. En la pestaña **Permisos**, acepte la opción predeterminada **Identidad asignada por el sistema** y seleccione **Siguiente: Diseñador de experimentos >**.
-1. En la pestaña **Diseñador de experimentos**, realice las siguientes acciones:
+1. En la pestaña **Permisos**, acepta la opción predeterminada **Identidad asignada por el sistema** y, después, selecciona **Siguiente: Diseñador de experimentos >**.
+1. En la pestaña **Diseñador de experimentos**, realiza las siguientes acciones:
 
-   - En el cuadro de texto **Paso**, escriba **Paso 1: Conmutación por error de una aplicación web de App Service**.
-   - En el cuadro de texto **Rama**, escriba **Rama 1: Emulación de un error de App Service**.
+   - En el cuadro de texto **Paso**, escribe **`Step 1: Failover an App Service web app`**.
+   - En el cuadro de texto **Rama**, escribe **`Branch 1: Emulate an App Service failure`**.
    - Seleccione **+ Agregar acción** y, en la lista desplegable, seleccione **Agregar error**.
 
 1. En la pestaña **Detalles del error** del panel **Agregar error**, en la lista desplegable **Errores**, seleccione **Detener App Service** y establezca el valor de **Duración (minutos)** en 10.
@@ -203,7 +203,7 @@ El ejercicio consta de las tareas siguientes:
 
    > **Nota:** Para que el experimento se realice correctamente, también debe conceder permisos suficientes a la cuenta de servicio administrada recién creada para detener la aplicación web de Azure App Service. Aprovecharemos para este propósito el rol integrado Colaborador de Azure, pero podría crear un rol personalizado si desea seguir el principio de privilegios mínimos.
 
-1. En Azure Portal, en el cuadro de texto de búsqueda de la parte superior de la página, escriba **App Services** y seleccione **App Services** en la lista de resultados.
+1. En Azure Portal, en el cuadro de texto de búsqueda de la parte superior de la página, escribe **`App Services`** y selecciona **App Services** en la lista de resultados.
 1. En la página **App Services**, seleccione la aplicación web de Azure App Service en la región Este de EE. UU. que implementó en el laboratorio anterior.
 1. En la página de la aplicación web, en el menú vertical del lado izquierdo, seleccione **Control de acceso (IAM)**.
 1. En la página **Control de acceso (IAM)** de la aplicación web, seleccione **+ Agregar** y, en la lista desplegable, seleccione **Agregar asignación de roles**.
@@ -247,12 +247,12 @@ El ejercicio consta de las tareas siguientes:
 
 ### Ejercicio 3: Eliminación de los recursos usados en los laboratorios
 
-En este ejercicio, quitará los recursos usados en los laboratorios.
+En este ejercicio, quitarás los recursos usados en los laboratorios.
 
-1. En la pestaña explorador web que muestra Azure Portal, en el cuadro de texto de búsqueda de la parte superior de la página, escriba **Grupos de recursos** y, en la lista de resultados, seleccione **Grupos de recursos**.
+1. En la pestaña explorador web que muestra Azure Portal, en el cuadro de texto de búsqueda de la parte superior de la página, escribe **`Resource groups`** y, en la lista de resultados, selecciona **Grupos de recursos**.
 1. En la página **Grupos de recursos**, en la lista de grupos de recursos, seleccione el grupo de recursos que creó en el laboratorio actual.
 1. En la página del grupo de recursos, seleccione **Eliminar grupo de recursos**.
-1. En el cuadro de texto **Escribir el nombre del grupo de recursos para confirmar la eliminación**, escriba el nombre del grupo de recursos que va a eliminar y, a continuación, seleccione **Eliminar**.
+1. En el cuadro de texto **Escribir el nombre del grupo de recursos para confirmar la eliminación**, escribe el nombre del grupo de recursos que vas a eliminar y, a continuación, selecciona **Eliminar**.
 
    > **Nota:** Espere a que se elimine el grupo de recursos. Debería tardar menos de un minuto.
 
