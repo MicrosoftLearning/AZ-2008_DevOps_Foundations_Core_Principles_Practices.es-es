@@ -161,85 +161,86 @@ El ejercicio consta de las tareas siguientes:
    echo devops-webapp-westeurope-$RANDOM$RANDOM
    ```
 
-1. Copie el valor devuelto por el comando y anote el valor. Lo usarás más adelante en este ejercicio.
+1. Copia el valor devuelto por el comando y anota el valor. Lo usarás más adelante en este ejercicio.
 1. En la sesión de Bash en el panel de Cloud Shell, ejecuta el siguiente comando para generar el nombre de la segunda App Service Web Apps que vas a implementar:
 
    ```cli
    echo devops-webapp-eastus-$RANDOM$RANDOM
    ```
 
-1. Copie el valor devuelto por el comando y anote el valor. Lo usarás más adelante en este ejercicio.
+1. Copia el valor devuelto por el comando y anota el valor. Lo usarás más adelante en este ejercicio.
 
 ### Tarea 3: Validación de la funcionalidad IaC y CI/CD
 
-1. Cambie a la ventana del explorador web que muestra la página del repositorio de GitHub **eShopOnWeb** bifurcada y, si es necesario, en la página **eShopOnWeb**, haga clic en la pestaña **Código** y, en la lista desplegable, confirme que la rama actual es la **principal**.
-1. En la ventana del navegador web que muestra la rama **principal** de la página del repositorio de GitHub **eShopOnWeb**, vaya a la carpeta **.github/workflows** y seleccione **eshoponweb-cicd.yml**.
-1. En el panel **.github/workflows/eshoponweb-cicd.yml**, seleccione el icono de lápiz para editar el flujo de trabajo.
-1. En el panel **Editar**, reemplace la línea 4 por el siguiente texto:
+1. Cambia a la ventana del navegador web que muestra la página del repositorio de GitHub **eShopOnWeb** bifurcada y, si es necesario, en la página **eShopOnWeb**, haz clic en la pestaña **Code** y, en la lista desplegable, confirma que la rama actual es **main**.
+1. En la ventana del navegador web que muestra la rama **principal** de la página del repositorio de GitHub **eShopOnWeb**, ve a la carpeta **.github/workflows** y selecciona **eshoponweb-cicd.yml**.
+1. En el panel **.github/workflows/eshoponweb-cicd.yml**, selecciona el icono de lápiz para editar el flujo de trabajo.
+1. En el panel **Editar**, reemplaza la línea 4 por el siguiente texto:
 
    ```yaml
    on: workflow_dispatch
    ```
 
-    >**Nota**: Asegúrese de usar la sangría adecuada.
+    >**Nota**: asegúrate de usar la sangría adecuada.
 
-1. En el panel **Editar**, reemplace la línea 8 por el siguiente texto:
+1. En el panel **Editar**, reemplaza la línea 8 por el siguiente texto:
 
    ```yaml
     RESOURCE-GROUP: rg-eshoponweb-westeurope
    ```
 
-1. En el panel **Editar**, reemplace el marcador de posición `YOUR-SUBS-ID` en la línea 11 por el valor del identificador de suscripción de Azure que registró anteriormente en este ejercicio:
-1. En el panel **Editar**, reemplace el marcador de posición `eshoponweb-webapp-NAME` en la línea 11 por el nombre de la **primera** aplicación web de Azure App Service que generó anteriormente en este ejercicio.
-1. En el panel **.github/workflows/eshoponweb-cicd.yml**, seleccione **Confirmar cambios** y, a continuación, vuelva a seleccionar **Confirmar cambios**.
-1. En la ventana del navegador web que muestra la rama **principal** de la página del repositorio de GitHub **eShopOnWeb**, vaya a la carpeta **infra** y seleccione **webapp.bicep**.
-1. En el panel **infra/webapp.bicep**, seleccione el icono de lápiz para editar el flujo de trabajo.
-1. En el panel **Editar**, reemplace la línea 2 por el siguiente texto:
+1. En el panel **Editar**, reemplaza el marcador de posición `YOUR-SUBS-ID` en la línea 11 por el valor del identificador de suscripción de Azure que registraste anteriormente en este ejercicio:
+1. En el panel **Editar**, reemplaza el marcador de posición `eshoponweb-webapp-NAME` en la línea 11 por el nombre de la **primera** aplicación web de Azure App Service que generaste anteriormente en este ejercicio.
+1. En el panel **.github/workflows/eshoponweb-cicd.yml**, selecciona **Confirmar cambios** y, a continuación, vuelve a seleccionar **Confirmar cambios**.
+1. En la ventana del navegador web que muestra la rama **principal** de la página del repositorio de GitHub **eShopOnWeb**, ve a la carpeta **infra** y selecciona **webapp.bicep**.
+1. En el panel **infra/webapp.bicep**, selecciona el icono de lápiz para editar el flujo de trabajo.
+1. En el panel **Editar**, reemplaza la línea 2 por el siguiente texto:
 
    ```yaml
    param sku string = 'S1' // The SKU of App Service Plan
    ```
 
-1. En el panel **infra/webapp.bicep**, seleccione **Confirmar cambios** y, a continuación, vuelva a seleccionar **Confirmar cambios**.
-1. En la ventana del explorador web que muestra la página del repositorio de GitHub de **eShopOnWeb** bifurcado, seleccione **Acciones**.
+1. En el panel **infra/webapp.bicep**, selecciona **Confirmar cambios** y, a continuación, vuelve a seleccionar **Confirmar cambios**.
+1. En la ventana del explorador web que muestra la página del repositorio de GitHub de **eShopOnWeb** bifurcado, selecciona **Acciones**.
 1. Si se te pide que habilites Acciones de GitHub, selecciona **Entiendo mis flujos de trabajo, continúe y habilítelos**.
-    >**Nota**: Esto es de esperar, ya que, por defecto GitHub desactivará los flujos de trabajo en un repositorio bifurcado para su propia protección.
-1. En la sección **Todos los flujos de trabajo** del lado izquierdo, seleccione **Compilación y prueba de eShopOnWeb**.
-1. En el panel **Compilación y prueba de eShopOnWeb**, seleccione **Ejecutar flujo de trabajo**, en la lista desplegable confirme que **Rama: principal** está seleccionada y seleccione **Ejecutar flujo de trabajo** de nuevo.
+    >**Nota**: esto es de esperar, ya que, por defecto GitHub desactivará los flujos de trabajo en un repositorio bifurcado para tu propia protección.
+1. En la sección **Todos los flujos de trabajo** del lado izquierdo, selecciona **Compilación y prueba de eShopOnWeb**.
+1. En el panel **Compilación y prueba de eShopOnWeb**, selecciona **Ejecutar flujo de trabajo**, en la lista desplegable confirma que **Rama: principal** está seleccionada y selecciona **Ejecutar flujo de trabajo** de nuevo.
 
-    >**Nota**: Esto debe desencadenar una ejecución de flujo de trabajo.
+    >**Nota**: esto debe desencadenar una ejecución de flujo de trabajo.
 
-1. Seleccione la ejecución del flujo de trabajo **Compilación y prueba de eShopOnWeb**.
+1. Selecciona la ejecución del flujo de trabajo **Compilación y prueba de eShopOnWeb**.
 
-    >**Nota**: Si es necesario, actualice la página para ver la ejecución del flujo de trabajo más reciente.
+    >**Nota**: si es necesario, actualiza la página para ver la ejecución del flujo de trabajo más reciente.
 
-1. En el panel **Compilación y prueba de eShopOnWeb número 1**, seleccione **buildandtest**.
-1. Supervise el progreso del flujo de trabajo y compruebe que todos los pasos del trabajo **buildandtest** se completen correctamente.
-1. Una vez completado este trabajo, en la sección **Resumen**, seleccione **implementar**.
-1. Supervise el progreso del flujo de trabajo y compruebe que todos los pasos del trabajo **deploy** se completen correctamente.
+1. En el panel **Compilación y prueba de eShopOnWeb número 1**, selecciona **buildandtest**.
+1. Supervisa el progreso del flujo de trabajo y comprueba que todos los pasos del trabajo **buildandtest** se completen correctamente.
+1. Una vez completado este trabajo, en la sección **Resumen**, selecciona **implementar**.
+1. Supervisa el progreso del flujo de trabajo y comprueba que todos los pasos del trabajo **deploy** se completen correctamente.
 
-    >**Nota**: En caso de que se produzca un error en cualquiera de los pasos, en la misma página que muestra el progreso del flujo de trabajo, en la esquina superior derecha, seleccione **Volver a ejecutar todos los trabajos** y, a continuación, en el panel **Volver a ejecutar todos los trabajos**, seleccione **Volver a ejecutar trabajos**.
+    >**Nota**: en caso de que se produzca un error en cualquiera de los pasos, en la misma página que muestra el progreso del flujo de trabajo, en la esquina superior derecha, selecciona **Volver a ejecutar todos los trabajos** y, a continuación, en el panel **Volver a ejecutar todos los trabajos**, selecciona **Volver a ejecutar trabajos**.
 
-1. Cambie a la ventana del explorador web que muestra la página del repositorio de GitHub **eShopOnWeb** bifurcada y, si es necesario, en la página **eShopOnWeb**, en la lista desplegable, confirme que la rama actual es la **principal**.
-1. En la ventana del navegador web que muestra la rama **principal** de la página del repositorio de GitHub **eShopOnWeb**, vaya a la carpeta **.github/workflows** y seleccione **eshoponweb-cicd.yml**.
-1. En el panel **.github/workflows/eshoponweb-cicd.yml**, seleccione el icono de lápiz para editar el flujo de trabajo.
-1. En el panel **Editar**, reemplace la línea 8 por el siguiente texto:
+1. Cambia a la ventana del navegador web que muestra la página del repositorio de GitHub **eShopOnWeb** bifurcada y, si es necesario, en la página **eShopOnWeb**, en la lista desplegable, confirma que la rama actual es **main**.
+1. En la ventana del navegador web que muestra la rama **principal** de la página del repositorio de GitHub **eShopOnWeb**, ve a la carpeta **.github/workflows** y selecciona **eshoponweb-cicd.yml**.
+1. En el panel **.github/workflows/eshoponweb-cicd.yml**, selecciona el icono de lápiz para editar el flujo de trabajo.
+1. En el panel **Editar**, reemplaza la línea 8 por el siguiente texto:
 
    ```yaml
     RESOURCE-GROUP: rg-eshoponweb-eastus
    ```
 
-1. En el panel **Editar**, reemplace el marcador de posición `eshoponweb-webapp-NAME` en la línea 11 por el nombre de la **segunda** aplicación web de Azure App Service que generó anteriormente en este ejercicio.
-1. En el panel **.github/workflows/eshoponweb-cicd.yml**, seleccione **Confirmar cambios** y, a continuación, vuelva a seleccionar **Confirmar cambios**.
-1. En la ventana del explorador web que muestra la página del repositorio de GitHub de **eShopOnWeb** bifurcado, seleccione **Acciones**.
-1. En la sección **Todos los flujos de trabajo** del lado izquierdo, seleccione **Compilación y prueba de eShopOnWeb**.
-1. En el panel **Compilación y prueba de eShopOnWeb**, seleccione **Ejecutar flujo de trabajo**, en la lista desplegable confirme que **Rama: principal** está seleccionada y seleccione **Ejecutar flujo de trabajo** de nuevo.
+1. En el panel **Editar**, reemplaza la variable `location` en la línea 9 por la región más cercana a la ubicación. 
+1. En el panel **Editar**, reemplaza el marcador de posición `eshoponweb-webapp-NAME` en la línea 11 por el nombre de la **segunda** aplicación web de Azure App Service que generaste anteriormente en este ejercicio.
+1. En el panel **.github/workflows/eshoponweb-cicd.yml**, selecciona **Confirmar cambios** y, a continuación, vuelve a seleccionar **Confirmar cambios**.
+1. En la ventana del explorador web que muestra la página del repositorio de GitHub de **eShopOnWeb** bifurcado, selecciona **Acciones**.
+1. En la sección **Todos los flujos de trabajo** del lado izquierdo, selecciona **Compilación y prueba de eShopOnWeb**.
+1. En el panel **Compilación y prueba de eShopOnWeb**, selecciona **Ejecutar flujo de trabajo**, en la lista desplegable confirma que **Rama: principal** está seleccionada y selecciona **Ejecutar flujo de trabajo** de nuevo.
 
-    >**Nota**: Esto debe desencadenar una ejecución de flujo de trabajo.
+    >**Nota**: esto debe desencadenar una ejecución de flujo de trabajo.
 
-1. Seleccione la ejecución del flujo de trabajo **Compilación y prueba de eShopOnWeb**.
-1. En el panel **Compilación y prueba de eShopOnWeb número 2**, seleccione **buildandtest**.
-1. Supervise el progreso del flujo de trabajo y compruebe que todos los pasos del trabajo **buildandtest** se completen correctamente.
+1. Selecciona la ejecución del flujo de trabajo **Compilación y prueba de eShopOnWeb**.
+1. En el panel **Compilación y prueba de eShopOnWeb número 2**, selecciona **buildandtest**.
+1. Supervisa el progreso del flujo de trabajo y comprueba que todos los pasos del trabajo **buildandtest** se completen correctamente.
 1. Una vez completado este trabajo, en la sección **Resumen**, seleccione **implementar**.
 1. Supervise el progreso del flujo de trabajo y compruebe que todos los pasos del trabajo **deploy** se completen correctamente.
 
