@@ -146,7 +146,7 @@ El ejercicio consta de las tareas siguientes:
 
    > **Nota:** En el cuadro de texto que se muestra automáticamente, puedes empezar a escribir para crear un borrador o escribe **#** para hacer referencia a un problema existente en cualquiera de los repositorios de GitHub. Comenzaremos con la primera de estas dos técnicas.
 
-1. En el cuadro de texto, escribe **`Missing Wiki`** y, después, presiona **Entrar** en el teclado. Esto agregará un nuevo elemento de borrador a la columna **Tareas pendientes**.
+1. En el cuadro de texto, escribe **`Missing Wiki`** y presiona **CTRL + Entrar** en el teclado. Esto agregará un nuevo elemento de borrador a la columna **Tareas pendientes**.
 1. En el elemento de borrador recién agregado, selecciona el símbolo de puntos suspensivos y, en el menú desplegable, selecciona **Convertir a incidencia**.
 1. En la lista desplegable **Seleccionar un elemento**, selecciona **DevOpsCoreIntroRepo** para agregar el elemento al repositorio que creaste en el ejercicio anterior. Ten en cuenta que la incidencia se ha etiquetado automáticamente con **#2**.
 1. Selecciona la incidencia **Falta wiki**.
