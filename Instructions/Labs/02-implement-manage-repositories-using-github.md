@@ -82,7 +82,8 @@ El ejercicio consta de las tareas siguientes:
 1. En el panel actual, en la sección Usuario asignado, seleccione **Agregar usuario asignado…** y, en la sección **Sugerencias**, seleccione el nombre de usuario de GitHub.
 1. Seleccione el icono de engranaje situado junto a la entrada **Etiquetas** y, en la lista desplegable, seleccione **mejora**.
 1. Seleccione el icono de engranaje situado junto a la entrada **Proyectos** y, en la lista desplegable, seleccione **DevOps Core Intro Project**.
-1. Seleccione **Enviar nueva incidencia**.
+1. Haz clic en **Crear** para guardar la nueva incidencia.
+1. Vuelve a abrir la nueva incidencia.
 1. En el panel **index.html parece bastante austero**, en la sección **Proyectos**, establezca **Estado** en **En curso**.
 1. En la página de **Spoon-Knife**, seleccione la pestaña **Proyectos**.
 1. En la página **Nuevos proyectos**, seleccione **DevOps Core Intro Project**.
